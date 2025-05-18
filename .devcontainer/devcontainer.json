@@ -1,0 +1,15 @@
+{
+  "name": "Open edX Tutor Dev",
+  "build": {
+    "dockerfile": "Dockerfile"
+  },
+  "customizations": {
+    "vscode": {
+      "settings": {}
+    }
+  },
+  "postCreateCommand": "tutor local quickstart --non-interactive || true",
+  "forwardPorts": [8000, 8001, 9000],
+  "mounts": [],
+  "remoteUser": "dev"
+}
